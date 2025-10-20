@@ -1,0 +1,83 @@
+{
+  "courses": [
+    {
+      "id": "0",
+      "name": "Developpement orienté objet",
+      "description": "Cours de développement orienté objet",
+      "ects": "4"
+    },
+    {
+      "id": "1",
+      "name": "Developpement web",
+      "description": "Cours de développement web",
+      "ects": "4"
+    },
+    {
+      "id": "2",
+      "name": "Anglais",
+      "description": "Cours d'anglais'",
+      "ects": "6"
+    },
+    {
+      "id": "3",
+      "name": "BDD",
+      "description": "Cours de BDD",
+      "ects": "6"
+    },
+    {
+      "id": "4",
+      "name": "Cybersécurité",
+      "description": "Cours de Cybersécurité",
+      "ects": "6"
+    },
+    {
+      "id": "6",
+      "name": "Nouveau cours",
+      "description": "Cours de nouveau cours",
+      "ects": "4"
+    },
+    {
+      "id": "7",
+      "name": "Nouveau cours",
+      "description": "Cours de nouveau cours",
+      "ects": "4"
+    }
+  ],
+  "articles": [
+    {
+      "id": "100",
+      "title": "L'essor de l'intelligence artificielle en 2025",
+      "author": "Marie Dupont",
+      "details": "L'intelligence artificielle continue de transformer de nombreux secteurs, de la santé à la finance. Les entreprises investissent massivement pour rester compétitives dans ce domaine en pleine expansion.",
+      "points": 3
+    },
+    {
+      "id": "101",
+      "title": "Les énergies renouvelables : où en est la France ?",
+      "author": "Jean Lefebvre",
+      "details": "La France accélère sa transition énergétique avec de nouveaux projets solaires et éoliens. Les experts soulignent toutefois la nécessité d'améliorer les infrastructures pour soutenir cette croissance.",
+      "points": 5
+    },
+    {
+      "id": "102",
+      "title": "Comment améliorer la cybersécurité des PME",
+      "author": "Sophie Martin",
+      "details": "Les petites et moyennes entreprises restent vulnérables face aux cyberattaques. Des solutions pratiques, allant de la formation des employés à l'installation de logiciels de sécurité, permettent de réduire les risques.",
+      "points": 5
+    },
+    {
+      "id": "103",
+      "title": "Le télétravail : un nouvel équilibre professionnel",
+      "author": "Lucas Bernard",
+      "details": "Le télétravail modifie profondément l'organisation du travail et la vie quotidienne. Les entreprises cherchent un juste équilibre entre flexibilité et maintien de la cohésion des équipes.",
+      "points": 0
+    },
+    {
+      "id": "104",
+      "title": "L’impact du changement climatique sur l’agriculture européenne",
+      "author": "Claire Dubois",
+      "details": "Les épisodes de sécheresse et les intempéries perturbent les récoltes dans plusieurs régions. Les agriculteurs adaptent leurs pratiques pour limiter les pertes et sécuriser la production alimentaire.",
+      "points": 0
+    }
+  ]
+}
