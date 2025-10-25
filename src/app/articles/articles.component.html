@@ -1,4 +1,4 @@
-<h2 [ngStyle]="{ textAlign: 'center' }">Articles</h2>
+<h1 [ngStyle]="{ textAlign: 'center' }">Articles</h1>
 
 <div
   [ngStyle]="{
@@ -8,7 +8,7 @@
   }"
 >
   <section>
-    <h3>Best article</h3>
+    <h2>Best article</h2>
     <article
       [ngStyle]="{
         border: '1px solid black',
@@ -16,14 +16,14 @@
         width: '350px'
       }"
     >
-      <h4 [ngStyle]="{ textAlign: 'center' }">
+      <h3 [ngStyle]="{ textAlign: 'center' }">
         "{{ bestArticle.title }}" - {{ bestArticle.author }}
-      </h4>
+      </h3>
     </article>
   </section>
 
   <section>
-    <h3>All articles</h3>
+    <h2>All articles</h2>
     <form
       [ngStyle]="{
         marginBottom: '1rem',
@@ -83,6 +83,7 @@
         [ngStyle]="{ 'list-style': 'none' }"
       >
         <article
+          [ngClass]="{ marked: article.points > 0 }"
           *ngIf="matchInputValue(article) && displayFilteredArticles(article)"
           [ngStyle]="{
             display: 'flex',
@@ -92,28 +93,28 @@
             width: '350px'
           }"
         >
-          <h4 [ngStyle]="{ textAlign: 'center' }">
+          <h3 [ngStyle]="{ textAlign: 'center' }">
             "{{ article.title }}" - {{ article.author }}
-          </h4>
+          </h3>
           <a
-          [routerLink]="'/articles/' + article.id"
-          routerLinkActive="active"
-          [ngStyle]="{
-            alignSelf: 'center',
-            width: '13rem',
-            border: '0.5px solid black',
-            padding: '2px',
-            backgroundColor: '#E1EBF1',
-            borderRadius: '5px',
-            color: 'black',
-            cursor: 'pointer',
-            marginBottom: '1rem',
-            textAlign: 'center',
-            fontSize: '15px'
-          }"
-        >
-          Voir détails dans une autre page
-        </a>
+            [routerLink]="'/articles/' + article.id"
+            routerLinkActive="active"
+            [ngStyle]="{
+              alignSelf: 'center',
+              width: '13rem',
+              border: '0.5px solid black',
+              padding: '2px',
+              backgroundColor: '#E1EBF1',
+              borderRadius: '5px',
+              color: 'black',
+              cursor: 'pointer',
+              marginBottom: '1rem',
+              textAlign: 'center',
+              fontSize: '15px'
+            }"
+          >
+            Voir détails dans une autre page
+          </a>
           <button
             (click)="showDetails(article.id)"
             [ngStyle]="{
@@ -140,7 +141,9 @@
               alignItems: 'center'
             }"
           >
-            <p>Points : {{ article.points }}</p>
+            <p [ngStyle]="{ color: 'rgb(0, ' + article.points + ', 0)' }">
+              Points : {{ article.points }}
+            </p>
             <button
               (click)="addPoints(article)"
               [ngStyle]="{
@@ -180,7 +183,9 @@
         </article>
       </li>
     </ul>
-    <app-article-details (details)="handleDetails($event)"></app-article-details>
+    <app-article-details
+      (details)="handleDetails($event)"
+    ></app-article-details>
   </section>
 
   <section
@@ -188,7 +193,7 @@
       marginBottom: '3rem'
     }"
   >
-    <h3>Add an article</h3>
+    <h2>Add an article</h2>
     <form
       [ngStyle]="{
         display: 'flex',

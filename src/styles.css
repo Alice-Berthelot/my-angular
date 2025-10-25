@@ -16,3 +16,12 @@ a {
 a:hover {
   color: black;
 }
+
+h1 {
+  text-align: center;
+}
+
+/* To move to component style when created */
+.marked {
+  background-color: #e2dbdb;
+}
