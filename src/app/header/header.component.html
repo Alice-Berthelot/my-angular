@@ -1,7 +1,7 @@
-<header [ngStyle]="{ backgroundColor: '#C8C6AF', padding: '3px' }">
-  <p [ngStyle]="{ textAlign: 'center' }">Header</p>
-  <nav [ngStyle]="{ display: 'flex', gap: '1rem', fontWeight: 'bold', color: 'black' }">
-    <a routerLink="/articles/all" routerLinkActive="active" >Articles</a>
+<header [ngStyle]="{ backgroundColor: '#6F4840', padding: '2rem' }">
+  <nav [ngStyle]="{ display: 'flex', justifyContent:'flex-end', gap: '1rem', fontWeight: 'bold', color: 'black' }">
+    <a routerLink="/" routerLinkActive="active" >Home</a>
     <a routerLink="/courses" routerLinkActive="active">Courses</a>
+    <a routerLink="/articles/all" routerLinkActive="active" >Articles</a>
   </nav>
 </header>
