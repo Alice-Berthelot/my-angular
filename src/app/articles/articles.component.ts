@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Article } from '../models/article';
 import { ArticlesService } from '../services/articles.service';
-import { CommonModule } from '@angular/common';
+import { CommonModule, TitleCasePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ArticleDetailsComponent } from '../article-details/article-details.component';
 import { RouterLink } from '@angular/router';
@@ -9,7 +9,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-articles',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterLink, ArticleDetailsComponent],
+  imports: [CommonModule, FormsModule, RouterLink, ArticleDetailsComponent, TitleCasePipe],
   templateUrl: './articles.component.html',
   styleUrl: './articles.component.css',
 })
@@ -83,10 +83,11 @@ export class ArticlesComponent implements OnInit {
     this.articlesService.putArticle(this.articleWithNewPoints).subscribe();
   }
 
-  reset(articleWithNewPoints: Article): void {
-    this.articleWithNewPoints = articleWithNewPoints;
-    this.articleWithNewPoints.points = 0;
-    this.articlesService.putArticle(this.articleWithNewPoints).subscribe();
+  reset(articleId: string): void {
+    const articleToReset = this.articles.find(article => article.id == articleId);
+    if (!articleToReset) return;
+    articleToReset.points = 0;
+    this.articlesService.putArticle(articleToReset).subscribe();
   }
 
   noFilter(): void {

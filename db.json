@@ -46,24 +46,24 @@
   "articles": [
     {
       "id": "100",
-      "title": "L'essor de l'intelligence artificielle en 2025",
-      "author": "Marie Dupont",
-      "details": "L'intelligence artificielle continue de transformer de nombreux secteurs, de la santé à la finance. Les entreprises investissent massivement pour rester compétitives dans ce domaine en pleine expansion.",
-      "points": 0
+      "title": "Les énergies renouvelables : où en est la France ?",
+      "author": "jean lefebvre",
+      "details": "La France accélère sa transition énergétique avec de nouveaux projets solaires et éoliens. Les experts soulignent toutefois la nécessité d'améliorer les infrastructures pour soutenir cette croissance.",
+      "points": 4
     },
     {
       "id": "101",
       "title": "Les énergies renouvelables : où en est la France ?",
-      "author": "Jean Lefebvre",
+      "author": "jean lefebvre",
       "details": "La France accélère sa transition énergétique avec de nouveaux projets solaires et éoliens. Les experts soulignent toutefois la nécessité d'améliorer les infrastructures pour soutenir cette croissance.",
-      "points": 5
+      "points": 0
     },
     {
       "id": "102",
-      "title": "Comment améliorer la cybersécurité des PME",
-      "author": "Sophie Martin",
-      "details": "Les petites et moyennes entreprises restent vulnérables face aux cyberattaques. Des solutions pratiques, allant de la formation des employés à l'installation de logiciels de sécurité, permettent de réduire les risques.",
-      "points": 4
+      "title": "Les énergies renouvelables : où en est la France ?",
+      "author": "jean lefebvre",
+      "details": "La France accélère sa transition énergétique avec de nouveaux projets solaires et éoliens. Les experts soulignent toutefois la nécessité d'améliorer les infrastructures pour soutenir cette croissance.",
+      "points": 3
     },
     {
       "id": "103",

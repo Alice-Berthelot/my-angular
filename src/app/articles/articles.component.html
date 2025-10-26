@@ -94,7 +94,7 @@
           }"
         >
           <h3 [ngStyle]="{ textAlign: 'center' }">
-            "{{ article.title }}" - {{ article.author }}
+            "{{ article.title }}" - {{ article.author | titlecase }}
           </h3>
           <a
             [routerLink]="'/articles/' + article.id"
@@ -155,7 +155,7 @@
               +1
             </button>
             <button
-              (click)="reset(article)"
+              (click)="reset(article.id)"
               [ngStyle]="{
                 width: '6rem',
                 border: '0.5px solid black',
