@@ -1,0 +1,34 @@
+<h1 [ngStyle]="{ textAlign: 'center' }">Contact</h1>
+
+<h2>Template forms - Get every single form value</h2>
+<form (ngSubmit)="onSubmit()">
+    <label for="name">Name:</label>
+    <input id="name" name="name" [(ngModel)]="userName"/>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" [(ngModel)]="userEmail"/>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" [(ngModel)]="userMessage"></textarea>
+    <button type="submit">Send</button>
+</form>
+
+<h2>Template forms - Get all the form values</h2>
+<form #myform="ngForm" (ngSubmit)="onSubmitForm(myform)">
+    <label for="name">Name:</label>
+    <input id="name" name="name" ngModel/>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" ngModel/>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" ngModel></textarea>
+    <button type="submit">Send</button>
+</form>
+
+<h2>Reactive forms</h2>
+<form [formGroup]="contactForm">
+    <label for="name">Name:</label>
+    <input id="name" name="name" formControlName="name"/>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" formControlName="email"/>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" formControlName="message"></textarea>
+    <button type="submit" (click)="onSubmitReactiveForm()">Send</button>
+</form>

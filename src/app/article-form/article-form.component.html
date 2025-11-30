@@ -1,0 +1,42 @@
+<form
+  [formGroup]="articleForm"
+  [ngStyle]="{
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '1rem',
+    width: '500px'
+  }"
+>
+  <label for="id">Id*:</label>
+  <input id="id" name="id" formControlName="id" />
+  <label for="title">Title*:</label>
+  <input type="title" id="title" name="title" formControlName="title" />
+  <label for="message">Author*:</label>
+  <input type="text" id="author" name="author" formControlName="author"/>
+  <label for="details">Details:</label>
+  <textarea id="details" name="details" formControlName="details"></textarea>
+  <button
+    type="submit"
+    (click)="addArticle()"
+    [ngStyle]="{
+      width: '100px',
+      alignSelf: 'end'
+    }"
+    [disabled]="articleForm.invalid"
+  >
+    Send
+  </button>
+</form>
+
+
+<!-- @if (articlePreview$ | async as article) {
+  <h3>Preview:</h3>
+  <p>{{ article.title }}</p>
+} -->
+
+
+<div *ngIf="articlePreview$ | async as article">
+  <h3>Preview:</h3>
+  <p>{{article.title}}</p>
+</div>
+

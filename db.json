@@ -78,6 +78,12 @@
       "author": "Claire Dubois",
       "details": "Les épisodes de sécheresse et les intempéries perturbent les récoltes dans plusieurs régions. Les agriculteurs adaptent leurs pratiques pour limiter les pertes et sécuriser la production alimentaire.",
       "points": 0
+    },
+    {
+      "id": "110",
+      "title": "Test titre",
+      "author": "Test auteur",
+      "details": "Test msg"
     }
   ]
 }

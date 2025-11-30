@@ -5,11 +5,12 @@ import { CommonModule, TitleCasePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ArticleDetailsComponent } from '../article-details/article-details.component';
 import { RouterLink } from '@angular/router';
+import { ArticleFormComponent } from '../article-form/article-form.component';
 
 @Component({
   selector: 'app-articles',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterLink, ArticleDetailsComponent, TitleCasePipe],
+  imports: [CommonModule, FormsModule, RouterLink, ArticleDetailsComponent, ArticleFormComponent, TitleCasePipe],
   templateUrl: './articles.component.html',
   styleUrl: './articles.component.css',
 })
