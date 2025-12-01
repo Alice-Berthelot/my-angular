@@ -1,34 +1,34 @@
-<h1 [ngStyle]="{ textAlign: 'center' }">Contact</h1>
+<h1>Contact</h1>
 
 <h2>Template forms - Get every single form value</h2>
-<form (ngSubmit)="onSubmit()">
+<form (ngSubmit)="onSubmit()" [ngStyle]="{ 'marginBottom': '3rem', 'display': 'flex', 'flexDirection': 'column', 'width': '40rem', 'gap': '1rem' }">
     <label for="name">Name:</label>
-    <input id="name" name="name" [(ngModel)]="userName"/>
+    <input id="name" name="name" [(ngModel)]="userName" [ngStyle]="{ 'height': '2rem' }"/>
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" [(ngModel)]="userEmail"/>
+    <input type="email" id="email" name="email" [(ngModel)]="userEmail" [ngStyle]="{ 'height': '2rem' }"/>
     <label for="message">Message:</label>
-    <textarea id="message" name="message" [(ngModel)]="userMessage"></textarea>
-    <button type="submit">Send</button>
+    <textarea id="message" name="message" [(ngModel)]="userMessage" [ngStyle]="{ 'height': '10rem' }"></textarea>
+    <button type="submit" [ngStyle]="{ 'marginTop': '1rem', 'align-self': 'flex-end', 'padding': '.25rem 2rem' }">Send</button>
 </form>
 
-<h2>Template forms - Get all the form values</h2>
-<form #myform="ngForm" (ngSubmit)="onSubmitForm(myform)">
+<h2 >Template forms - Get all the form values</h2>
+<form #myform="ngForm" (ngSubmit)="onSubmitForm(myform)" [ngStyle]="{ 'marginBottom': '3rem', 'display': 'flex', 'flexDirection': 'column', 'width': '40rem', 'gap': '1rem' }">
     <label for="name">Name:</label>
-    <input id="name" name="name" ngModel/>
+    <input id="name" name="name" ngModel [ngStyle]="{ 'height': '2rem' }"/>
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" ngModel/>
+    <input type="email" id="email" name="email" ngModel [ngStyle]="{ 'height': '2rem' }"/>
     <label for="message">Message:</label>
-    <textarea id="message" name="message" ngModel></textarea>
-    <button type="submit">Send</button>
+    <textarea id="message" name="message" ngModel [ngStyle]="{ 'height': '10rem' }"></textarea>
+    <button type="submit" [ngStyle]="{ 'marginTop': '1rem', 'align-self': 'flex-end', 'padding': '.25rem 2rem' }">Send</button>
 </form>
 
 <h2>Reactive forms</h2>
-<form [formGroup]="contactForm">
+<form [formGroup]="contactForm" [ngStyle]="{ 'display': 'flex', 'flexDirection': 'column', 'width': '40rem', 'gap': '1rem' }">
     <label for="name">Name:</label>
-    <input id="name" name="name" formControlName="name"/>
+    <input id="name" name="name" formControlName="name" [ngStyle]="{ 'height': '2rem' }"/>
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" formControlName="email"/>
+    <input type="email" id="email" name="email" formControlName="email" [ngStyle]="{ 'height': '2rem' }"/>
     <label for="message">Message:</label>
-    <textarea id="message" name="message" formControlName="message"></textarea>
-    <button type="submit" (click)="onSubmitReactiveForm()">Send</button>
+    <textarea id="message" name="message" formControlName="message" [ngStyle]="{ 'height': '10rem' }"></textarea>
+    <button type="submit" (click)="onSubmitReactiveForm()" [ngStyle]="{ 'marginTop': '1rem', 'align-self': 'flex-end', 'padding': '.25rem 2rem' }">Send</button>
 </form>

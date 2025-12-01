@@ -12,8 +12,8 @@
     <article
       [ngStyle]="{
         border: '1px solid black',
-        padding: '2px 4px',
-        width: '350px'
+        padding: '2rem',
+        width: '30rem'
       }"
     >
       <h3 [ngStyle]="{ textAlign: 'center' }">
@@ -76,21 +76,25 @@
         marginBottom: '1rem',
       }"
     >
-      <label for="filter">Filter: </label>
+      <label for="filter">Search: </label>
       <input type="text" id="filter" name="filter" [(ngModel)]="inputValue" />
     </form>
+  
     <div
       [ngStyle]="{
         display: 'flex',
-        gap: '.5rem'
+        gap: '.5rem',
+        'align-items': 'baseline' 
       }"
     >
+    <p>Filter:</p>
       <button
         (click)="noFilter()"
         [ngStyle]="{
           border: '1px solid',
-          borderRadius: '50px',
-          cursor: 'pointer'
+          borderRadius: '30px',
+          cursor: 'pointer',
+          padding: '1rem 2rem'
         }"
       >
         All
@@ -100,7 +104,8 @@
         [ngStyle]="{
           border: '1px solid',
           borderRadius: '50px',
-          cursor: 'pointer'
+          cursor: 'pointer',
+          padding: '1rem'
         }"
       >
         5 points
@@ -110,7 +115,8 @@
         [ngStyle]="{
           border: '1px solid',
           borderRadius: '50px',
-          cursor: 'pointer'
+          cursor: 'pointer',
+          padding: '1rem'
         }"
       >
         3 points
@@ -136,11 +142,13 @@
             display: 'flex',
             flexDirection: 'column',
             border: '1px solid black',
-            padding: '2px 4px',
-            width: '350px'
+            padding: '2rem',
+            width: '25rem',
+            height: '18rem',
+            'overflow-y': 'scroll'
           }"
         >
-          <h3 [ngStyle]="{ textAlign: 'center' }">
+          <h3 [ngStyle]="{ textAlign: 'center', marginBottom: '1rem' }">
             "{{ article.title }}" - {{ article.author | titlecase }}
           </h3>
           <a
@@ -160,7 +168,7 @@
               fontSize: '15px'
             }"
           >
-            Voir détails dans une autre page
+            Open details in a new tab
           </a>
           <button
             (click)="showDetails(article.id)"
@@ -174,7 +182,7 @@
               cursor: 'pointer'
             }"
           >
-            Voir détails ci-dessous
+            See details below
           </button>
           <app-article-details
             *ngIf="detailedArticleId == article.id"
@@ -239,6 +247,5 @@
     [ngStyle]="{
       marginBottom: '3rem'
     }"
-  >
-  </section>
+  ></section>
 </div>

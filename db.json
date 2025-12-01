@@ -2,88 +2,82 @@
   "courses": [
     {
       "id": "0",
-      "name": "Developpement orienté objet",
-      "description": "Cours de développement orienté objet",
+      "name": "Object-Oriented Programming",
+      "description": "Object-oriented programming course",
       "ects": "4"
     },
     {
       "id": "1",
-      "name": "Developpement web",
-      "description": "Cours de développement web",
+      "name": "Web Development",
+      "description": "Web development course",
       "ects": "4"
     },
     {
       "id": "2",
-      "name": "Anglais",
-      "description": "Cours d'anglais'",
+      "name": "English",
+      "description": "English course",
       "ects": "6"
     },
     {
       "id": "3",
-      "name": "BDD",
-      "description": "Cours de BDD",
+      "name": "Databases",
+      "description": "Database course",
       "ects": "6"
     },
     {
       "id": "4",
-      "name": "Cybersécurité",
-      "description": "Cours de Cybersécurité",
+      "name": "Cybersecurity",
+      "description": "Cybersecurity course",
       "ects": "6"
     },
     {
       "id": "6",
-      "name": "Nouveau cours",
-      "description": "Cours de nouveau cours",
+      "name": "New Course",
+      "description": "New course description",
       "ects": "4"
     },
     {
       "id": "7",
-      "name": "Nouveau cours",
-      "description": "Cours de nouveau cours",
+      "name": "New Course",
+      "description": "New course description",
       "ects": "4"
     }
   ],
   "articles": [
     {
       "id": "100",
-      "title": "Les énergies renouvelables : où en est la France ?",
-      "author": "jean lefebvre",
-      "details": "La France accélère sa transition énergétique avec de nouveaux projets solaires et éoliens. Les experts soulignent toutefois la nécessité d'améliorer les infrastructures pour soutenir cette croissance.",
+      "title": "Renewable Energy: Where Does France Stand?",
+      "author": "John Smith",
+      "details": "France is accelerating its energy transition with new solar and wind projects. However, experts emphasize the need to improve infrastructure to support this growth.",
       "points": 4
     },
     {
       "id": "101",
-      "title": "Les énergies renouvelables : où en est la France ?",
-      "author": "jean lefebvre",
-      "details": "La France accélère sa transition énergétique avec de nouveaux projets solaires et éoliens. Les experts soulignent toutefois la nécessité d'améliorer les infrastructures pour soutenir cette croissance.",
+      "title": "Renewable Energy: Where Does France Stand?",
+      "author": "John Smith",
+      "details": "France is accelerating its energy transition with new solar and wind projects. However, experts emphasize the need to improve infrastructure to support this growth.",
       "points": 0
     },
     {
       "id": "102",
-      "title": "Les énergies renouvelables : où en est la France ?",
-      "author": "jean lefebvre",
-      "details": "La France accélère sa transition énergétique avec de nouveaux projets solaires et éoliens. Les experts soulignent toutefois la nécessité d'améliorer les infrastructures pour soutenir cette croissance.",
+      "title": "Renewable Energy: Where Does France Stand?",
+      "author": "John Smith",
+      "details": "France is accelerating its energy transition with new solar and wind projects. However, experts emphasize the need to improve infrastructure to support this growth.",
       "points": 3
     },
     {
       "id": "103",
-      "title": "Le télétravail : un nouvel équilibre professionnel",
-      "author": "Lucas Bernard",
-      "details": "Le télétravail modifie profondément l'organisation du travail et la vie quotidienne. Les entreprises cherchent un juste équilibre entre flexibilité et maintien de la cohésion des équipes.",
-      "points": 0
+      "title": "Remote Work: A New Professional Balance",
+      "author": "Lucas Bennett",
+      "details": "Remote work is profoundly changing work organization and everyday life. Companies are seeking the right balance between flexibility and maintaining team cohesion.",
+      "points": 2
     },
     {
       "id": "104",
-      "title": "L’impact du changement climatique sur l’agriculture européenne",
-      "author": "Claire Dubois",
-      "details": "Les épisodes de sécheresse et les intempéries perturbent les récoltes dans plusieurs régions. Les agriculteurs adaptent leurs pratiques pour limiter les pertes et sécuriser la production alimentaire.",
-      "points": 0
-    },
-    {
-      "id": "110",
-      "title": "Test titre",
-      "author": "Test auteur",
-      "details": "Test msg"
+      "title": "The Impact of Climate Change on European Agriculture",
+      "author": "Claire Dawson",
+      "details": "Periods of drought and extreme weather are disrupting crops in several regions. Farmers are adapting their practices to reduce losses and secure food production.",
+      "points": 5
     }
   ]
 }

@@ -25,6 +25,11 @@ a:hover {
 
 h1 {
   text-align: center;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
 }
 
 /* To move to component style when created */
