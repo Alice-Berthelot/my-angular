@@ -15,12 +15,12 @@
   <input type="text" id="author" name="author" formControlName="author"/>
   <label for="details">Details:</label>
   <textarea id="details" name="details" formControlName="details"></textarea>
-  <p [ngStyle]="{ 'font-style': 'italic' }"><span [ngStyle]="{ 'color': 'red' }">*</span> Compulsory fields</p>
+  <p [ngStyle]="{ 'font-style': 'italic' }"><span [ngStyle]="{ 'color': 'red' }">*</span> Required fields</p>
   <button
     type="submit"
     (click)="addArticle()"
     [ngStyle]="{
-      width: '100px',
+      'padding': '.25rem 2rem',
       alignSelf: 'end'
     }"
     [disabled]="articleForm.invalid"

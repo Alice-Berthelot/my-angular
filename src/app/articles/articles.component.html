@@ -156,10 +156,9 @@
             routerLinkActive="active"
             [ngStyle]="{
               alignSelf: 'center',
-              width: '13rem',
+              width: '15rem',
               border: '0.5px solid black',
-              padding: '2px',
-              backgroundColor: '#E1EBF1',
+              'padding': '.25rem 2rem',
               borderRadius: '5px',
               color: 'black',
               cursor: 'pointer',
@@ -174,10 +173,9 @@
             (click)="showDetails(article.id)"
             [ngStyle]="{
               alignSelf: 'center',
-              width: '10rem',
+              width: '15rem',
               border: '0.5px solid black',
-              padding: '2px',
-              backgroundColor: '#E1EBF1',
+              'padding': '.25rem 2rem',
               borderRadius: '5px',
               cursor: 'pointer'
             }"
@@ -214,8 +212,8 @@
               [ngStyle]="{
                 width: '6rem',
                 border: '0.5px solid black',
-                backgroundColor: 'transparent',
-                cursor: 'pointer'
+                cursor: 'pointer',
+                'padding': '.25rem 2rem'
               }"
             >
               Reset
@@ -229,9 +227,9 @@
               border: '0.5px solid black',
               marginTop: '1rem',
               padding: '2px',
-              backgroundColor: '#D7D0C8',
               cursor: 'pointer'
             }"
+            class="delete-button"
           >
             Delete
           </button>

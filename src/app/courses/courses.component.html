@@ -1,51 +1,31 @@
 <h1>Courses</h1>
 
-<p>Interpolation : {{ title }}</p>
-
-<p>Interpolation2 : {{ getTitle() }}</p>
-
+<h2>Data binding</h2>
+<section class="data-binding">
+<p>Interpolation: {{ title }}</p>
+<p>Interpolation2: {{ getTitle() }}</p>
 <p>Property binding <input type="text" [value]="author" /></p>
-
 <input type="text" (click)="updateTitle()" />
-
 <p>
   <input type="text" [(ngModel)]="title" />
 </p>
-
+</section>
+<h2>All courses</h2>
 <ul>
   <li>
     {{ courses[0].id }} - {{ courses[0].name }} - {{ courses[0].description }}
-    <button (click)="deleteCourse(courses[0].id)">Supprimer</button>
+    <button (click)="deleteCourse(courses[0].id)" class="delete-button">Delete</button>
   </li>
   <li>
     {{ courses[1].id }} - {{ courses[1].name }} - {{ courses[1].description }}
-    <button (click)="deleteCourse(courses[1].id)">Supprimer</button>
+    <button (click)="deleteCourse(courses[1].id)" class="delete-button">Delete</button>
   </li>
   <li>
     {{ courses[2].id }} - {{ courses[2].name }} - {{ courses[2].description }}
-    <button (click)="deleteCourse(courses[2].id)">Supprimer</button>
+    <button (click)="deleteCourse(courses[2].id)" class="delete-button">Delete</button>
   </li>
 </ul>
-
-<p>Cours unique :</p>
-<ul>
-  <li>{{ course.id }}</li>
-  <li>{{ course.name }}</li>
-  <li>{{ course.description }}</li>
-  <li>{{ course.ects }}</li>
-</ul>
-
-<button (click)="addCourse()">Ajouter cours</button>
-
-<button (click)="putCourse()">Modifier cours</button>
-
-<!-- <p>Créer un nouveau cours</p>
-<form (ngSubmit)="onSubmit()">
-  <label>Nom :</label>
-  <input type="text" name="course" />
-  <label>Description :</label>
-  <input type="text" name="course" />
-  <label>Description :</label>
-  <input type="ects" name="course" />
-  <button type="submit">Envoyer</button>
-</form> -->
+<h2>One course only</h2>
+<p>{{ course.id }} - {{ course.name }} - {{ course.description }} - {{ course.ects }}</p>
+<button (click)="addCourse()" class="delete-button">Delete course</button>
+<button (click)="putCourse()">Modify course</button>

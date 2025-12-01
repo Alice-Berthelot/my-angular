@@ -20,7 +20,7 @@ export class CoursesComponent implements OnInit {
   constructor(private courseService: CourseService) {}
 
   ngOnInit(): void {
-    this.title = 'Mes cours';
+    this.title = 'My courses';
     this.courseService.getCourses().subscribe((courses: Course[]) => {
       this.courses = courses;
     });
@@ -29,14 +29,14 @@ export class CoursesComponent implements OnInit {
     });
     this.courseToAdd = {
       "id": "7",
-      "name": "Nouveau cours",
-      "description": "Cours de nouveau cours",
+      "name": "New course",
+      "description": "New course description",
       "ects": "4"
     };
     this.courseModified = {
       "id": "2",
-      "name": "Anglais",
-      "description": "Cours d'anglais'",
+      "name": "English",
+      "description": "English course",
       "ects": "10"
     };
   }
@@ -59,9 +59,9 @@ export class CoursesComponent implements OnInit {
     return this.title;
   }
 
-  author: string = 'Auteur';
+  author: string = 'Author';
 
   updateTitle() {
-    return (this.title = 'nouveau titre');
+    return (this.title = 'new title');
   }
 }

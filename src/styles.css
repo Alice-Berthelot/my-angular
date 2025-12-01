@@ -32,6 +32,10 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.delete-button {
+  background-color: "#BD897E";
+}
+
 /* To move to component style when created */
 .marked {
   background-color: #e2dbdb;
