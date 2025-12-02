@@ -32,8 +32,13 @@ h2 {
   margin-bottom: 1rem;
 }
 
+button {
+  cursor: pointer;
+}
+
 .delete-button {
-  background-color: "#BD897E";
+  background-color: #bd897e;
+  padding: 0.25rem 2rem;
 }
 
 /* To move to component style when created */
