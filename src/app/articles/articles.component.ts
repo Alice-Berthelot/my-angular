@@ -91,16 +91,9 @@ export class ArticlesComponent implements OnInit {
     this.articlesService.putArticle(articleToReset).subscribe();
   }
 
-  noFilter(): void {
-    this.filter = "";
-  }
 
-  filterByFivePoints(): void {
-    this.filter = "5";
-  }
-
-  filterByThreePoints(): void {
-    this.filter = "3";
+  filterArticles(points: string): void {
+    this.filter = points;
   }
 
   displayFilteredArticles(article?: Article): boolean {

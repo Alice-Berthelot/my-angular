@@ -89,7 +89,7 @@
     >
     <p>Filter:</p>
       <button
-        (click)="noFilter()"
+        (click)="filterArticles('')"
         [ngStyle]="{
           border: '1px solid',
           borderRadius: '30px',
@@ -99,7 +99,7 @@
         All
       </button>
       <button
-        (click)="filterByFivePoints()"
+        (click)="filterArticles('5')"
         [ngStyle]="{
           border: '1px solid',
           borderRadius: '50px',
@@ -109,7 +109,7 @@
         5 points
       </button>
       <button
-        (click)="filterByThreePoints()"
+        (click)="filterArticles('3')"
         [ngStyle]="{
           border: '1px solid',
           borderRadius: '50px',
